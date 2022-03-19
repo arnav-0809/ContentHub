@@ -1,0 +1,19 @@
+Commands to run the microservices
+
+1) Command to be written on command line in user_interaction_service
+   -> docker build -t user_interaction_service/pratilipi .
+
+2) Command to be written on command line in content_service
+   -> docker build -t content_service/pratilipi .
+
+3) Command to be written on command line in user_service
+   -> docker-compose up
+
+In the .env file of user_interaction_service
+ - Put your ipv4 address
+   userRestUrl=http://IPV4_address:8080
+
+In the .env file of content_service
+ - Put your ipv4 address
+   userRestUrl=http://IPV4_address:8080
+   userInteractionUrl=http://IPV4_address:5000

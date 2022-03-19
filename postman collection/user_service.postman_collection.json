@@ -1,0 +1,391 @@
+{
+	"info": {
+		"_postman_id": "aa375920-e3be-43c0-9ee2-b14195053c28",
+		"name": "user_service",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "http://127.0.0.1:8080/createUser",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"first_name\":\"arnav\",\r\n    \"last_name\":\"sehgal\",\r\n    \"email_id\":\"as@gmail.com\",\r\n    \"phone_number\":\"2234567890\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8080/createUser",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8080",
+					"path": [
+						"createUser"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "http://127.0.0.1:8080/createUser",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"first_name\":\"arnav\",\r\n    \"last_name\":\"sehgal\",\r\n    \"email_id\":\"as@gmail.com\",\r\n    \"phone_number\":\"2234567890\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://127.0.0.1:8080/createUser",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8080",
+							"path": [
+								"createUser"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "198"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"c6-JYImTt27tWIepMLjQ3nSvHkLArs\""
+						},
+						{
+							"key": "Date",
+							"value": "Wed, 19 Jan 2022 14:05:59 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"code\": 200,\n    \"errCode\": null,\n    \"message\": \"User Created\",\n    \"user\": {\n        \"first_name\": \"arnav\",\n        \"last_name\": \"sehgal\",\n        \"email_id\": \"as@gmail.com\",\n        \"phone_number\": \"2234567890\",\n        \"_id\": \"61e81ac72fa998887666e78e\",\n        \"__v\": 0\n    }\n}"
+				}
+			]
+		},
+		{
+			"name": "http://127.0.0.1:8080/getUser?user_id=61e2adaf114bfddccf15afd5",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:8080/getUser?user_id=61e2adaf114bfddccf15afd5",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8080",
+					"path": [
+						"getUser"
+					],
+					"query": [
+						{
+							"key": "user_id",
+							"value": "61e2adaf114bfddccf15afd5"
+						}
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "http://127.0.0.1:8080/getUser?user_id=61e2adaf114bfddccf15afd5",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://127.0.0.1:8080/getUser?user_id=61e2adaf114bfddccf15afd5",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8080",
+							"path": [
+								"getUser"
+							],
+							"query": [
+								{
+									"key": "user_id",
+									"value": "61e2adaf114bfddccf15afd5"
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "194"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"c2-4ymE+P2mDfqifMq9iOBNrSRT38U\""
+						},
+						{
+							"key": "Date",
+							"value": "Wed, 19 Jan 2022 13:52:51 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"code\": 200,\n    \"errCode\": null,\n    \"message\": \"userFound\",\n    \"user\": {\n        \"_id\": \"61e2adaf114bfddccf15afd5\",\n        \"first_name\": \"arnav\",\n        \"last_name\": \"sehgal\",\n        \"email_id\": \"a@gmail.com\",\n        \"phone_number\": \"1234567899\",\n        \"__v\": 0\n    }\n}"
+				}
+			]
+		},
+		{
+			"name": "http://127.0.0.1:8080/deleteUser",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"phone_number\":\"2234567890\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8080/deleteUser",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8080",
+					"path": [
+						"deleteUser"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "http://127.0.0.1:8080/deleteUser",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"phone_number\":\"2234567890\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://127.0.0.1:8080/deleteUser",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8080",
+							"path": [
+								"deleteUser"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "52"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"34-bBKXULZbbqE7cTKG0jwL3fTUNgQ\""
+						},
+						{
+							"key": "Date",
+							"value": "Wed, 19 Jan 2022 14:14:54 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"code\": 200,\n    \"errCode\": null,\n    \"message\": \"user deleted\"\n}"
+				}
+			]
+		},
+		{
+			"name": "http://127.0.0.1:8080/updateUser",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"first_name\":\"ar\",\r\n    \"phone_number\":\"1234567890\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8080/updateUser",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8080",
+					"path": [
+						"updateUser"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "http://127.0.0.1:8080/updateUser",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"first_name\":\"ar\",\r\n    \"phone_number\":\"1234567890\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://127.0.0.1:8080/updateUser",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8080",
+							"path": [
+								"updateUser"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "52"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"34-f39140Q1lL1R9o0aAvxzlKqDjY0\""
+						},
+						{
+							"key": "Date",
+							"value": "Wed, 19 Jan 2022 14:16:59 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"code\": 200,\n    \"errCode\": null,\n    \"message\": \"User updated\"\n}"
+				}
+			]
+		}
+	]
+}

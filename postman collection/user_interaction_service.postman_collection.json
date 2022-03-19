@@ -1,0 +1,361 @@
+{
+	"info": {
+		"_postman_id": "efb99268-5d57-48f8-91f5-b1d54960c7a1",
+		"name": "user_interaction_service",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "http://127.0.0.1:5000/contentReadEvent",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"user_id\":\"61e2adaf114bfddccf15afd5\",\r\n    \"content_id\":\"61e81d80ad73f8afafbcf15c\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:5000/contentReadEvent",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "5000",
+					"path": [
+						"contentReadEvent"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "http://127.0.0.1:5000/contentReadEvent",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"user_id\":\"61e820ba0d90477d6242ba95\",\r\n    \"content_id\":\"61e81d80ad73f8afafbcf15c\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://127.0.0.1:5000/contentReadEvent",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "5000",
+							"path": [
+								"contentReadEvent"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "242"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"f2-wH8VrWNNzT5CgmxKUdTTXiBbPaw\""
+						},
+						{
+							"key": "Date",
+							"value": "Wed, 19 Jan 2022 14:33:16 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"code\": 200,\n    \"errCode\": null,\n    \"message\": \"Read Event Successful\",\n    \"userInteraction\": {\n        \"content_id\": \"61e81d80ad73f8afafbcf15c\",\n        \"likes\": [],\n        \"reads\": [\n            \"61e820ba0d90477d6242ba95\"\n        ],\n        \"likes_count\": 0,\n        \"reads_count\": 1,\n        \"_id\": \"61e8212bfc288ab39e7e8803\",\n        \"__v\": 0\n    }\n}"
+				}
+			]
+		},
+		{
+			"name": "http://127.0.0.1:5000/contentLikeEvent",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"user_id\":\"61e2adaf114bfddccf15afd5\",\r\n    \"content_id\":\"61e81d80ad73f8afafbcf15c\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:5000/contentLikeEvent",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "5000",
+					"path": [
+						"contentLikeEvent"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "http://127.0.0.1:5000/contentLikeEvent",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"user_id\":\"61e820ba0d90477d6242ba95\",\r\n    \"content_id\":\"61e81d80ad73f8afafbcf15c\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://127.0.0.1:5000/contentLikeEvent",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "5000",
+							"path": [
+								"contentLikeEvent"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "61"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"3d-0JdCYj94vKkqkfCTptFopWivqfA\""
+						},
+						{
+							"key": "Date",
+							"value": "Wed, 19 Jan 2022 14:33:57 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"code\": 200,\n    \"errCode\": null,\n    \"message\": \"Like Event Successful\"\n}"
+				}
+			]
+		},
+		{
+			"name": "http://127.0.0.1:5000/getUserLikedContent",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:5000/getUserLikedContent",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "5000",
+					"path": [
+						"getUserLikedContent"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "http://127.0.0.1:5000/getUserLikedContent",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://127.0.0.1:5000/getUserLikedContent",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "5000",
+							"path": [
+								"getUserLikedContent"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "824"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"338-HVcoPO3bXp+UZKFr2zZS7OdGvGY\""
+						},
+						{
+							"key": "Date",
+							"value": "Wed, 19 Jan 2022 14:34:15 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"content\": [\n        {\n            \"_id\": \"61e5da1ab7f2dd6a437af471\",\n            \"content_id\": \"61e5d7012c54b42082d0d30a\",\n            \"likes\": [\n                \"61e2adaf114bfddccf15afd5\",\n                \"61e5c5dd26189f4d5b18f1fb\"\n            ],\n            \"reads\": [\n                \"61e5c5dd26189f4d5b18f1fb\",\n                \"61e2adaf114bfddccf15afd5\"\n            ],\n            \"likes_count\": 2,\n            \"reads_count\": 2,\n            \"__v\": 0\n        },\n        {\n            \"_id\": \"61e5cc34d69b660f2c24dc7c\",\n            \"content_id\": \"61e43e08e942a6ea481969d2\",\n            \"likes\": [\n                \"61e2adaf114bfddccf15afd5\"\n            ],\n            \"reads\": [\n                \"61e2adaf114bfddccf15afd5\",\n                \"61e5c5dd26189f4d5b18f1fb\"\n            ],\n            \"likes_count\": 1,\n            \"reads_count\": 2,\n            \"__v\": 0\n        },\n        {\n            \"_id\": \"61e8212bfc288ab39e7e8803\",\n            \"content_id\": \"61e81d80ad73f8afafbcf15c\",\n            \"likes\": [\n                \"61e820ba0d90477d6242ba95\"\n            ],\n            \"reads\": [\n                \"61e820ba0d90477d6242ba95\"\n            ],\n            \"likes_count\": 1,\n            \"reads_count\": 1,\n            \"__v\": 0\n        },\n        {\n            \"_id\": \"61e5d9f2b7f2dd6a437af46d\",\n            \"content_id\": \"61e43e08e942a6ea481969d3\",\n            \"likes\": [],\n            \"reads\": [\n                \"61e5c5dd26189f4d5b18f1fb\"\n            ],\n            \"likes_count\": 0,\n            \"reads_count\": 1,\n            \"__v\": 0\n        }\n    ]\n}"
+				}
+			]
+		},
+		{
+			"name": "http://127.0.0.1:5000/getUserReadContent",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:5000/getUserReadContent",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "5000",
+					"path": [
+						"getUserReadContent"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "http://127.0.0.1:5000/getUserReadContent",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://127.0.0.1:5000/getUserReadContent",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "5000",
+							"path": [
+								"getUserReadContent"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "824"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"338-9qma3t5OpLFQ29FwEOH87s/CDxs\""
+						},
+						{
+							"key": "Date",
+							"value": "Wed, 19 Jan 2022 14:35:00 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"content\": [\n        {\n            \"_id\": \"61e5cc34d69b660f2c24dc7c\",\n            \"content_id\": \"61e43e08e942a6ea481969d2\",\n            \"likes\": [\n                \"61e2adaf114bfddccf15afd5\"\n            ],\n            \"reads\": [\n                \"61e2adaf114bfddccf15afd5\",\n                \"61e5c5dd26189f4d5b18f1fb\"\n            ],\n            \"likes_count\": 1,\n            \"reads_count\": 2,\n            \"__v\": 0\n        },\n        {\n            \"_id\": \"61e5da1ab7f2dd6a437af471\",\n            \"content_id\": \"61e5d7012c54b42082d0d30a\",\n            \"likes\": [\n                \"61e2adaf114bfddccf15afd5\",\n                \"61e5c5dd26189f4d5b18f1fb\"\n            ],\n            \"reads\": [\n                \"61e5c5dd26189f4d5b18f1fb\",\n                \"61e2adaf114bfddccf15afd5\"\n            ],\n            \"likes_count\": 2,\n            \"reads_count\": 2,\n            \"__v\": 0\n        },\n        {\n            \"_id\": \"61e5d9f2b7f2dd6a437af46d\",\n            \"content_id\": \"61e43e08e942a6ea481969d3\",\n            \"likes\": [],\n            \"reads\": [\n                \"61e5c5dd26189f4d5b18f1fb\"\n            ],\n            \"likes_count\": 0,\n            \"reads_count\": 1,\n            \"__v\": 0\n        },\n        {\n            \"_id\": \"61e8212bfc288ab39e7e8803\",\n            \"content_id\": \"61e81d80ad73f8afafbcf15c\",\n            \"likes\": [\n                \"61e820ba0d90477d6242ba95\"\n            ],\n            \"reads\": [\n                \"61e820ba0d90477d6242ba95\"\n            ],\n            \"likes_count\": 1,\n            \"reads_count\": 1,\n            \"__v\": 0\n        }\n    ]\n}"
+				}
+			]
+		}
+	]
+}

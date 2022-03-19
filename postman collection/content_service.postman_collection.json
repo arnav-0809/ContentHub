@@ -1,0 +1,645 @@
+{
+	"info": {
+		"_postman_id": "f0e33ad2-6298-4c2b-a9e6-1bf8af0c999e",
+		"name": "content_service",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "http://127.0.0.1:8000/postTitleAndStory",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "contentFile",
+							"type": "file",
+							"src": "/C:/Users/HP/Desktop/story - Copy - Copy.csv"
+						},
+						{
+							"key": "user_id",
+							"value": "61e2adaf114bfddccf15afd5",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/postTitleAndStory",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"postTitleAndStory"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "http://127.0.0.1:8000/postTitleAndStory",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "contentFile",
+									"type": "file",
+									"src": "/C:/Users/HP/Desktop/story - Copy - Copy.csv"
+								},
+								{
+									"key": "user_id",
+									"value": "61e2adaf114bfddccf15afd5",
+									"type": "text"
+								}
+							],
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://127.0.0.1:8000/postTitleAndStory",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"postTitleAndStory"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "53"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"35-pz0AOBU83CSA83is1mWd4jcqMKo\""
+						},
+						{
+							"key": "Date",
+							"value": "Wed, 19 Jan 2022 14:17:36 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"code\": 200,\n    \"errCode\": null,\n    \"message\": \"Content saved\"\n}"
+				}
+			]
+		},
+		{
+			"name": "http://127.0.0.1:8000/deleteContent",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"id\":\"61e81d80ad73f8afafbcf15e\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/deleteContent",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"deleteContent"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "http://127.0.0.1:8000/deleteContent",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"id\":\"61e81d80ad73f8afafbcf15e\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://127.0.0.1:8000/deleteContent",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"deleteContent"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "55"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"37-dKC54ctAGs6JxSSRPf3tDHPf6qM\""
+						},
+						{
+							"key": "Date",
+							"value": "Wed, 19 Jan 2022 14:19:05 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"code\": 200,\n    \"errCode\": null,\n    \"message\": \"Content deleted\"\n}"
+				}
+			]
+		},
+		{
+			"name": "http://127.0.0.1:8000/topReadContent",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:8000/topReadContent",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"topReadContent"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "http://127.0.0.1:8000/topReadContent",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://127.0.0.1:8000/topReadContent",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"topReadContent"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "464"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"1d0-E0rF3moLcmkYIGCzwpcl3+pB1BM\""
+						},
+						{
+							"key": "Date",
+							"value": "Wed, 19 Jan 2022 14:20:04 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"topReadContent\": [\n        {\n            \"_id\": \"61e43e08e942a6ea481969d2\",\n            \"user_id\": \"1\",\n            \"title\": \"Story\",\n            \"story\": \"what a story\",\n            \"date_published\": \"2022-01-16T16:18:33.790Z\",\n            \"__v\": 0\n        },\n        {\n            \"_id\": \"61e5d7012c54b42082d0d30a\",\n            \"user_id\": \"1\",\n            \"title\": \"Nice\",\n            \"story\": \"This is a nice story\",\n            \"date_published\": \"2022-01-17T20:52:17.079Z\",\n            \"__v\": 0\n        },\n        {\n            \"_id\": \"61e43e08e942a6ea481969d3\",\n            \"user_id\": \"1\",\n            \"title\": \"Another Story\",\n            \"story\": \"This is another story\",\n            \"date_published\": \"2022-01-16T15:47:20.563Z\",\n            \"__v\": 0\n        }\n    ]\n}"
+				}
+			]
+		},
+		{
+			"name": "http://127.0.0.1:8000/topLikedContent",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:8000/topLikedContent",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"topLikedContent"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "http://127.0.0.1:8000/topLikedContent",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://127.0.0.1:8000/topLikedContent",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"topLikedContent"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "465"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"1d1-CoystOpQ2NQzKpHg1Feor8KebME\""
+						},
+						{
+							"key": "Date",
+							"value": "Wed, 19 Jan 2022 14:21:22 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"topLikedContent\": [\n        {\n            \"_id\": \"61e5d7012c54b42082d0d30a\",\n            \"user_id\": \"1\",\n            \"title\": \"Nice\",\n            \"story\": \"This is a nice story\",\n            \"date_published\": \"2022-01-17T20:52:17.079Z\",\n            \"__v\": 0\n        },\n        {\n            \"_id\": \"61e43e08e942a6ea481969d2\",\n            \"user_id\": \"1\",\n            \"title\": \"Story\",\n            \"story\": \"what a story\",\n            \"date_published\": \"2022-01-16T16:18:33.790Z\",\n            \"__v\": 0\n        },\n        {\n            \"_id\": \"61e43e08e942a6ea481969d3\",\n            \"user_id\": \"1\",\n            \"title\": \"Another Story\",\n            \"story\": \"This is another story\",\n            \"date_published\": \"2022-01-16T15:47:20.563Z\",\n            \"__v\": 0\n        }\n    ]\n}"
+				}
+			]
+		},
+		{
+			"name": "http://127.0.0.1:8000/newContent",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:8000/newContent",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"newContent"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "http://127.0.0.1:8000/newContent",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://127.0.0.1:8000/newContent",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"newContent"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "918"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"396-RQ9ApXdPPM02iFtr7XgkGD0yhFo\""
+						},
+						{
+							"key": "Date",
+							"value": "Wed, 19 Jan 2022 14:25:16 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"newContent\": [\n        {\n            \"_id\": \"61e81d80ad73f8afafbcf15c\",\n            \"user_id\": \"61e2adaf114bfddccf15afd5\",\n            \"title\": \"Yeah\",\n            \"story\": \"Yeah,This is a story\",\n            \"date_published\": \"2022-01-19T14:17:36.454Z\",\n            \"__v\": 0\n        },\n        {\n            \"_id\": \"61e5d7012c54b42082d0d307\",\n            \"user_id\": \"1\",\n            \"title\": \"Hello\",\n            \"story\": \"This is a story\",\n            \"date_published\": \"2022-01-17T20:52:17.079Z\",\n            \"__v\": 0\n        },\n        {\n            \"_id\": \"61e5d7012c54b42082d0d30a\",\n            \"user_id\": \"1\",\n            \"title\": \"Nice\",\n            \"story\": \"This is a nice story\",\n            \"date_published\": \"2022-01-17T20:52:17.079Z\",\n            \"__v\": 0\n        },\n        {\n            \"_id\": \"61e5d7012c54b42082d0d309\",\n            \"user_id\": \"1\",\n            \"title\": \"wow\",\n            \"story\": \"wow,This is a story\",\n            \"date_published\": \"2022-01-17T20:52:17.079Z\",\n            \"__v\": 0\n        },\n        {\n            \"_id\": \"61e43e08e942a6ea481969d2\",\n            \"user_id\": \"1\",\n            \"title\": \"Story\",\n            \"story\": \"what a story\",\n            \"date_published\": \"2022-01-16T16:18:33.790Z\",\n            \"__v\": 0\n        },\n        {\n            \"_id\": \"61e43e08e942a6ea481969d3\",\n            \"user_id\": \"1\",\n            \"title\": \"Another Story\",\n            \"story\": \"This is another story\",\n            \"date_published\": \"2022-01-16T15:47:20.563Z\",\n            \"__v\": 0\n        }\n    ]\n}"
+				}
+			]
+		},
+		{
+			"name": "http://127.0.0.1:8000/updateContent",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"id\":\"61e43e08e942a6ea481969d2\",\r\n    \"title\":\"New story\",\r\n    \"story\":\"This is a new story\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/updateContent",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"updateContent"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "http://127.0.0.1:8000/updateContent",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"id\":\"61e43e08e942a6ea481969d2\",\r\n    \"title\":\"New story\",\r\n    \"story\":\"This is a new story\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://127.0.0.1:8000/updateContent",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"updateContent"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "55"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"37-J91lLOsWlg1IgsbIFS/KUr1rgys\""
+						},
+						{
+							"key": "Date",
+							"value": "Wed, 19 Jan 2022 14:27:05 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"code\": 200,\n    \"errCode\": null,\n    \"message\": \"Content updated\"\n}"
+				}
+			]
+		},
+		{
+			"name": "http://127.0.0.1:8000/getContent?id=61e43e08e942a6ea481969d2",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:8000/getContent?id=61e43e08e942a6ea481969d2",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"getContent"
+					],
+					"query": [
+						{
+							"key": "id",
+							"value": "61e43e08e942a6ea481969d2"
+						}
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "http://127.0.0.1:8000/getContent?id=61e43e08e942a6ea481969d2",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://127.0.0.1:8000/getContent?id=61e81d80ad73f8afafbcf15c",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"getContent"
+							],
+							"query": [
+								{
+									"key": "id",
+									"value": "61e81d80ad73f8afafbcf15c"
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "230"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"e6-TMOMRP6m7HIwpt0rGmrscfEKnb0\""
+						},
+						{
+							"key": "Date",
+							"value": "Wed, 19 Jan 2022 15:59:02 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"code\": 200,\n    \"errCode\": null,\n    \"message\": \"Content Found\",\n    \"user\": {\n        \"_id\": \"61e81d80ad73f8afafbcf15c\",\n        \"user_id\": \"61e2adaf114bfddccf15afd5\",\n        \"title\": \"Yeah\",\n        \"story\": \"Yeah,This is a story\",\n        \"date_published\": \"2022-01-19T14:17:36.454Z\",\n        \"__v\": 0\n    }\n}"
+				}
+			]
+		}
+	]
+}

@@ -1,0 +1,8 @@
+user_service
+https://app.swaggerhub.com/apis/arnavsehgal2001/user_service/1.0.0-oas3
+
+content_service
+https://app.swaggerhub.com/apis/arnavsehgal2001/content_service/1.0.0
+
+user_interaction_service
+https://app.swaggerhub.com/apis/arnavsehgal2001/user_interaction_service/1.0.0

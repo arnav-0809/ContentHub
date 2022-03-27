@@ -34,9 +34,7 @@ app.get("/test", (req, res) => {
 
 app.use("/", contentUploadRoutes);
 app.use("/", contentRoutes);
-cron.schedule("*/5 * * * * *", async () => {
-  app.use("/", contentSortRoutes);
-});
+app.use("/", contentSortRoutes);
 
 server.listen(PORT, () => {
   console.log(`PORT: ${PORT}`);
